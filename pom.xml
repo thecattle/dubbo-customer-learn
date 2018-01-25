@@ -52,6 +52,7 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
+
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>dubbo</artifactId>
@@ -78,6 +79,14 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ali-nexus-self</id>
+			<name>Ali Nexus Self</name>
+			<url>http://116.62.123.48:8889/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 
 </project>

@@ -11,13 +11,18 @@ import org.springframework.web.bind.annotation.RestController;
  * @time 2017/12/27 11:34
  * @description
  */
-@EnableAutoConfiguration
+//@EnableAutoConfiguration
 @RestController
 public class HelloWorldCustomerController {
-    @Autowired
+    @Autowired(required = false)
     HelloService helloService;
+//    @RequestMapping(value = "/customer")
+//    public String customer(){
+//        return helloService.sayHello();
+//    }
+
     @RequestMapping(value = "/customer")
     public String customer(){
-        return helloService.sayHello();
+        return "1";
     }
 }
